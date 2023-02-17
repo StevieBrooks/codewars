@@ -15,5 +15,7 @@ function squareSum(numbers){
   /* 
   Initially, I tried using the forEach() method when assigning a value to 
   the squareNums variable, however, this kept returning undefined. Changing the 
-  method to map() did the trick. 
+  method to map() did the trick. This is my refactor, actually did this myself...yay!
+
+  return numbers.map((n) => n*n).reduce((p, n) => p + n, 0);
   */
