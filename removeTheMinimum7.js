@@ -11,9 +11,9 @@ function removeSmallest(numbers) {
         }
     }
     // remove smallest number and return new array
-    numbers.splice(smallNum);
-    output = numbers;
-    return output;
+    let newArr = numbers;
+    let removeNums = newArr.indexOf(smallNum).splice(smallNum, 1);
+    return newArr;
   }
 
   console.log(removeSmallest([9, 4, 3, 3, 7, 2, 4, 1, 7]));
