@@ -12,8 +12,11 @@ function removeSmallest(numbers) {
     }
     // remove smallest number and return new array
     let newArr = numbers;
-    let removeNums = newArr.indexOf(smallNum).splice(smallNum, 1);
+    newArr.splice(newArr[smallNum], 1);
     return newArr;
   }
 
   console.log(removeSmallest([9, 4, 3, 3, 7, 2, 4, 1, 7]));
+
+  /* THROWING IN THE TOWEL NOW AS i'VE BEEN AT THIS FOR NEARLY AN HOUR. CAN'T FIGURE OUT WHY MY SMALLNUM
+  VARIABLE IS CORRECT ON SOME OCCASIONS AND BAFFLING ON OTHERS. FUCK YOU! */
